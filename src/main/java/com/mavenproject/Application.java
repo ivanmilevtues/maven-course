@@ -1,7 +1,5 @@
 package com.mavenproject;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 
 public class Application {
@@ -12,6 +10,13 @@ public class Application {
         for(String element: stringList) {
             System.out.println("Application output: " + element);
         }
+    }
+
+    public int countWords(String str) {
+        if(str == null) {
+            return 0;
+        }
+        return StringUtils.split(str).length;
     }
 
     public static void main(String[] args) {

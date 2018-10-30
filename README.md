@@ -28,3 +28,10 @@ There are 6 scopes of the dependencies:
 4. Provided - from the target or from the applicaiton server
 5. System - only localy. Only for license work arounds.
 6. Import - replace dependecies from other projects. Almost never used.
+
+## Testing
+```
+mvn test
+```
+
+Tests are run as part of the install goal.
