@@ -2,12 +2,12 @@ package com.mavenproject;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.commons.lang3.StringUtils;
 
 public class Application {
 
     public void versionSpecificMethod() {
-        List<String> stringList = new ArrayList<>();
-        stringList.add("Hahaha diamond operator pre java 7");
+        String[] stringList = StringUtils.split("I am sadasd", ' ');
 
         for(String element: stringList) {
             System.out.println("Application output: " + element);
